@@ -9,7 +9,6 @@ void LoadInit() {
 	SetWindowSizeExtendRate(WINDOW_EXTEND);//ウィンドウ拡大率
 	//SetWindowSizeChangeEnableFlag(TRUE);//途中大きさ変更あり
 	SetWindowStyleMode(WINDOW_STYLE);//ウィンドウの最大化ボタンを機能させる。
-	SetDrawScreen(DX_SCREEN_BACK);	//裏画面を描画対象へ
 	//SetUseIMEFlag(true);// ＩＭＥを使用するかどうかを設定する
 	SetWindowText(WINDOW_NAME);
 	SetAlwaysRunFlag(TRUE);//ウィンドウが非アクティブでも動くか
@@ -29,7 +28,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//SetAlwaysRunFlag(TRUE);//ウィンドウがアクティブではない状態でも動く
 	//SetUseZBuffer3D(TRUE);
 	//SetWriteZBuffer3D(TRUE);
-		
+	SetDrawScreen(DX_SCREEN_BACK);	//裏画面を描画対象へ
+
 
 	//最初に１回呼ぶ
 	App::Init();
