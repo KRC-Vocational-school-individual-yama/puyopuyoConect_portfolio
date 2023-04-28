@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="puyo_\chain.cpp" />
+    <ClCompile Include="puyo_\connect.cpp" />
+    <ClCompile Include="puyo_\field.cpp" />
+    <ClCompile Include="puyo_\horizontallink.cpp" />
+    <ClCompile Include="puyo_\links.cpp" />
+    <ClCompile Include="puyo_\navigation.cpp" />
+    <ClCompile Include="puyo_\puyo.cpp" />
+    <ClCompile Include="puyo_\puyogame.cpp" />
+    <ClCompile Include="puyo_\puyoscene.cpp" />
+    <ClCompile Include="puyo_\rect.cpp" />
+    <ClCompile Include="puyo_\save.cpp" />
+    <ClCompile Include="puyo_\score.cpp" />
+    <ClCompile Include="puyo_\se.cpp" />
+    <ClCompile Include="puyo_\send.cpp" />
+    <ClCompile Include="puyo_\verticallink.cpp" />
+    <ClCompile Include="puyo_\connectmode.cpp" />
+    <ClCompile Include="slot_s_\backScene.cpp" />
+    <ClCompile Include="slot_s_\effect.cpp" />
+    <ClCompile Include="slot_s_\reel.cpp" />
+    <ClCompile Include="slot_s_\slotscene.cpp" />
+    <ClCompile Include="slot_s_\uiinterface.cpp" />
+    <ClCompile Include="source\app.cpp" />
+    <ClCompile Include="source\farstonescene.cpp" />
+    <ClCompile Include="source\gamescene.cpp" />
+    <ClCompile Include="source\testplayer.cpp" />
+    <ClCompile Include="source\scene.cpp" />
+    <ClCompile Include="source\scenechanger.cpp" />
+    <ClCompile Include="source\scenemanager.cpp" />
+    <ClCompile Include="source\title.cpp" />
+    <ClCompile Include="source\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="puyo_\chain.h" />
+    <ClInclude Include="puyo_\field.h" />
+    <ClInclude Include="puyo_\horizontallink.h" />
+    <ClInclude Include="puyo_\links.h" />
+    <ClInclude Include="puyo_\navigation.h" />
+    <ClInclude Include="puyo_\puyo.h" />
+    <ClInclude Include="puyo_\puyogame.h" />
+    <ClInclude Include="puyo_\puyoscene.h" />
+    <ClInclude Include="puyo_\rect.h" />
+    <ClInclude Include="puyo_\save.h" />
+    <ClInclude Include="puyo_\send.h" />
+    <ClInclude Include="puyo_\verticallink.h" />
+    <ClInclude Include="puyo_\score.h" />
+    <ClInclude Include="puyo_\se.h" />
+    <ClInclude Include="puyo_\connect.h" />
+    <ClInclude Include="puyo_\connectmode.h" />
+    <ClInclude Include="slot_s_\effect.h" />
+    <ClInclude Include="slot_s_\reel.h" />
+    <ClInclude Include="slot_s_\slotscene.h" />
+    <ClInclude Include="slot_s_\uiinterface.h" />
+    <ClInclude Include="slot_s_\backScene.h" />
+    <ClInclude Include="source\app.h" />
+    <ClInclude Include="source\colorhsv.h" />
+    <ClInclude Include="source\config.h" />
+    <ClInclude Include="source\farstonescene.h" />
+    <ClInclude Include="source\object.h" />
+    <ClInclude Include="source\scene.h" />
+    <ClInclude Include="source\scenechanger.h" />
+    <ClInclude Include="source\scenemanager.h" />
+    <ClInclude Include="source\title.h" />
+    <ClInclude Include="source\testplayer.h" />
+    <ClInclude Include="source\gamescene.h" />
+    <ClInclude Include="source\common.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71365B7B-12B3-4558-AA62-93B1629A3CD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DxLibSampleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>DxLibSampleProject</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\DxLib_VC\プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
